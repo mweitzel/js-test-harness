@@ -1,1 +1,1 @@
-I was on a plane without internet or git and wanted to write some js. This is what I ended up with.
+Js test harness with a few asserts, helpers, and it blocks for scoping.
