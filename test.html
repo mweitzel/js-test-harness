@@ -1,0 +1,33 @@
+in console
+<script src='core.js'></script>
+<script>
+  it("true is true",function(){
+    assert(true, "is true")
+  })
+  it("false is false",function(){
+    assertNot(false, "is false")
+  })
+
+  it("hould work", function(){
+    assert("asdf", "asdf", "butts")
+  })
+
+  it("catches thrown errors", function(){
+    assert(
+      throws( function(){ throw "thing" } )
+    )
+    assertNot(
+      throws( function(){ "don't throw thing" } )
+    )
+  })
+  it("this is an 'it' block", function(){
+    assert(false, "this is a failing test inside it")
+  })
+  it("it blocks with names", function(){
+    it("are appended when nested", function(){
+      assert(false, "this is a failing test")
+      assert(false, "this is never recieved")
+    })
+  })
+
+</script>
