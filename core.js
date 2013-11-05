@@ -43,7 +43,7 @@
 
   var nameStack = []
 
-  var messageFrom = __messageFrom__ = function(maybe_message){
+  var messageFrom = function(maybe_message){
     var message = nameStack.join("..") + ": " + maybe_message
     return message
   }
