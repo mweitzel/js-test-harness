@@ -19,7 +19,7 @@
     assert(equals(obj1, obj2), message)
   }  
 
-  it = function(name, callback){
+  it = describe = function(name, callback){
     nameStack.push(name)
     try{
       callback()
